@@ -1,0 +1,7 @@
+docker-compose down; docker system prune --force --volumes; docker rm -f $(docker container list -qa); docker rmi $(docker image list -qa); docker-compose up -d;  
+
+sudo groupadd docker;
+sudo usermod -aG doker $USER;
+newgrp docker;
+chown root:rho99 . -R;
+

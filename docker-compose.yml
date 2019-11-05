@@ -26,6 +26,8 @@ services:
     networks:
       - code-network
     container_name: php-srv
+    links:
+     - db
   db:
     image: mysql:8.0.18
     command: --default-authentication-plugin=mysql_native_password

@@ -9,9 +9,17 @@
 
             <div class="card card-body">
                 <form action="llenar.php" method="POST">
-                    <label for="Pregunta">Cuantas respuestas por pregunta</label>
+                    <label for="Pregunta">.....</label>
                     <div class="form-group">
-                        <input type="number" name="respuestas" min="2" max="4" class="form-control">
+                        <input type="text" name="pregunta" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                    <label for="tipo">Tipo de pregunta: </label>
+                        <select name="tipo" >
+                            <option value="checkbox" selected>multiple</option>
+                            <option value="radio" selected>unica</option>
+                            <option value="binaria">si/no</option>
+                        </select>
                     </div>
                     <input type="submit" class="btn btn-success btn-block" name="agregar" value="Enviar">
                 </form>

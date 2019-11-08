@@ -1,6 +1,11 @@
  <!--JS-->
  <hr>
- <a href="admin.php">Administrador</a>
+ <ul>
+ <li><a href="admin.php">Administrador</a><br></li>
+ <li><a href="reports.php">Reportes</a></li>
+ </ul>
+ 
+ 
  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
   crossorigin="anonymous"></script>

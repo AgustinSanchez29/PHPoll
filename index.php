@@ -1,13 +1,18 @@
 <?php include("includes/header.php"); ?>
+<?php include("funciones.php");
 
 
-<section>
+if ( isset($_POST['sexo']) )  {
+    entrar();
+}
+else {
+  echo '<section>
     <div class="container">
         <h3>Datos requeridos para realizar la encuesta</h3>
         <div class="row">
         <div class="col-md-4">
         <div class="card card-body">
-                <form action="funciones.php" method="POST">
+                <form action="" method="POST">
                     <div class="form-group">
                         <input type="text" name="sexo" class="form-control" placeholder="Sexo" required>
                         <input type="text" name="edad" class="form-control" placeholder="Edad" required>
@@ -20,8 +25,10 @@
         </div>
         </div>
     </div>
-</section>
+   </section>';
+}
 
 
 
+?>
 <?php include("includes/footer.php") ?>
